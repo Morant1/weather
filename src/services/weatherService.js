@@ -20,7 +20,7 @@ let gFavorites = [];
 
 export async function getCityByCoords(lat, lng) {
     try {
-        const city = axios.get(`https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=z0766gk3hrdKoJ0iTWMryRUvQAuQYgkj&q=${lat},${lng}`)
+        const city = axios.get(`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=z0766gk3hrdKoJ0iTWMryRUvQAuQYgkj&q=${lat},${lng}`)
         return city;
     } catch (err) {
         console.log(err)
