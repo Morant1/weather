@@ -20,7 +20,7 @@ let gFavorites = [];
 
 export async function getCityByCoords(lat, lng) {
     try {
-        const city = axios.get(`http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=z0766gk3hrdKoJ0iTWMryRUvQAuQYgkj&q=${lat},${lng}`)
+        const city = axios.get(`https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=z0766gk3hrdKoJ0iTWMryRUvQAuQYgkj&q=${lat},${lng}`)
         return city;
     } catch (err) {
         console.log(err)
@@ -33,7 +33,7 @@ export async function getWeather(locationId,cityName) {
         gWeather  = storageService.loadFromStorage(KEY_WEATHER);
         if (gWeather) return gWeather;
     } else {
-    var prmRes = axios.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationId}?apikey=s9LG1iE1JYDKGH9A5AeujArIo8xOyqjR&language=en-us&details=false&metric=false`)
+    var prmRes = axios.get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationId}?apikey=s9LG1iE1JYDKGH9A5AeujArIo8xOyqjR&language=en-us&details=false&metric=false`)
     return prmRes.then(res => {
         res.data.cityName = cityName;
         res.data.key = locationId;
@@ -46,7 +46,7 @@ export async function getWeather(locationId,cityName) {
 
 
 export async function getAutoComplete(keyword) {
-    var prmRes = axios.get(`http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=s9LG1iE1JYDKGH9A5AeujArIo8xOyqjR&q=${keyword}&language=en-us`)
+    var prmRes = axios.get(`https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=s9LG1iE1JYDKGH9A5AeujArIo8xOyqjR&q=${keyword}&language=en-us`)
     return prmRes.then(res => {
         return res.data
     })
