@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/weather/static/css/main.943f9609.chunk.css",
+    "main.js": "/weather/static/js/main.05f82e27.chunk.js",
+    "main.js.map": "/weather/static/js/main.05f82e27.chunk.js.map",
+    "runtime-main.js": "/weather/static/js/runtime-main.80a89714.js",
+    "runtime-main.js.map": "/weather/static/js/runtime-main.80a89714.js.map",
+    "static/js/2.f7a0d1ee.chunk.js": "/weather/static/js/2.f7a0d1ee.chunk.js",
+    "static/js/2.f7a0d1ee.chunk.js.map": "/weather/static/js/2.f7a0d1ee.chunk.js.map",
+    "index.html": "/weather/index.html",
+    "precache-manifest.01f40927498a093eb9fed02d7fe6f0fe.js": "/weather/precache-manifest.01f40927498a093eb9fed02d7fe6f0fe.js",
+    "service-worker.js": "/weather/service-worker.js",
+    "static/css/main.943f9609.chunk.css.map": "/weather/static/css/main.943f9609.chunk.css.map",
+    "static/js/2.f7a0d1ee.chunk.js.LICENSE.txt": "/weather/static/js/2.f7a0d1ee.chunk.js.LICENSE.txt",
+    "static/media/global.scss": "/weather/static/media/Montserrat-Regular.ee653992.ttf",
+    "static/media/icon.png": "/weather/static/media/icon.528f75c9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80a89714.js",
+    "static/js/2.f7a0d1ee.chunk.js",
+    "static/css/main.943f9609.chunk.css",
+    "static/js/main.05f82e27.chunk.js"
+  ]
+}
